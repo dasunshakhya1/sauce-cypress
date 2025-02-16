@@ -135,3 +135,4 @@ dist
 
 # Cypress
 cypress/downloads/
+cypress/screenshots

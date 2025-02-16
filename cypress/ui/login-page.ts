@@ -1,14 +1,16 @@
+import {get, visit} from "../support/cy";
+
 export class LoginPage {
 
 
     static openApplication() {
-        cy.visit("/");
+        visit("/");
     }
 
     static login(username: string, password: string) {
-        cy.get('[data-test="username"]').type(username)
-        cy.get('[data-test="password"]').type(password)
-        cy.get('#login-button').click()
+        get('[data-test="username"]').type(username)
+        get('[data-test="password"]').type(password)
+        get('#login-button').click()
     }
 
 }
