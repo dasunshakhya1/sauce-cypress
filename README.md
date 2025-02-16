@@ -1,4 +1,4 @@
-## API Automation Framework for REST APIs
+## Web Automation Framework
 
 ## Description
 
