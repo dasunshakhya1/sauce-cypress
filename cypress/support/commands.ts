@@ -35,3 +35,34 @@
 //     }
 //   }
 // }
+
+Cypress.on('window:alert', (str) => {
+    // prevent the alert from being triggered
+    return false;
+});
+
+Cypress.on('window:confirm', (str) => {
+    // prevent the confirm dialog from being triggered (returns true by default)
+    return false;
+});
+
+Cypress.on('window:before:unload', (str) => {
+    // prevent the prompt dialog from being triggered
+    return false;
+});
+
+Cypress.on('window:load', (str) => {
+    // prevent the prompt dialog from being triggered
+    return false;
+});
+
+
+Cypress.on('window:unload', (str) => {
+    // prevent the prompt dialog from being triggered
+    return false;
+});
+
+Cypress.on('window:before:load', (str) => {
+    // prevent the prompt dialog from being triggered
+    return false;
+});

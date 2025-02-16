@@ -2,7 +2,7 @@
   "type": "module",
   "scripts": {
     "cy:open": "npx cypress open",
-    "cy:run": "npx cypress run"
+    "test": "npx cypress run"
   },
   "devDependencies": {
     "cypress": "^14.0.3",

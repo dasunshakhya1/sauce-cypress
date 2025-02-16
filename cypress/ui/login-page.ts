@@ -1,4 +1,4 @@
-import {get, visit} from "../support/cy";
+import {click, type, visit} from "../support/cy";
 
 export class LoginPage {
 
@@ -8,9 +8,9 @@ export class LoginPage {
     }
 
     static login(username: string, password: string) {
-        get('[data-test="username"]').type(username)
-        get('[data-test="password"]').type(password)
-        get('#login-button').click()
+        type('[data-test="username"]', username)
+        type('[data-test="password"]', password)
+        click('#login-button')
     }
 
 }
